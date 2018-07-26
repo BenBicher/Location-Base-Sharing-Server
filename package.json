@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "json-stringify-safe": "^5.0.1",
+    "mongodb": "^3.1.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenBicher/Location-Base-Sharing-Server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BenBicher/Location-Base-Sharing-Server/issues"
+  },
+  "homepage": "https://github.com/BenBicher/Location-Base-Sharing-Server#readme",
+  "description": ""
+}
