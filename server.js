@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors')
 const MongoClient = require('mongodb').MongoClient;
+const port = process.env.port || 8000;
 
 var corsOptions = {
   origin: 'https://location-base-sh-1530431619237.firebaseapp.com',
@@ -14,9 +15,9 @@ app.use(cors(corsOptions))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// app.listen(8000, () => {
-//   console.log('Server started!');
-// });
+app.listen(port, () => {
+  console.log('Server started!');
+});
 
 var url = "mongodb+srv://benbicher:benbicher@location-base-sharing-f2dij.mongodb.net/";
 
